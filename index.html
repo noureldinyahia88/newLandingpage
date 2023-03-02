@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="secion">
+    <!-- form for wide screen -->
+    <div class="test">
+      <form id="signup-form">
+        <h1 class="form-title">FIND YOUR EASY FLIGHT</h1>
+        <label for="select1">From</label>
+  <select id="select1" name="select1">
+    <option value="" disabled selected hidden>Choose City</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <label for="select1">To</label>
+  <select id="select1" name="select1">
+    <option class="choose-city" value="" disabled selected hidden>Choose City</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  <label for="date">Departure </label>
+  <input type="date" id="date" name="date">
+
+  <label for="date">Return </label>
+  <input type="date" id="date" name="date">
+
+  <div class="btn-passenger">
+    <div class="passenger">
+      <label for="select1">Passenger</label>
+    <select id="select1" name="select1">
+      <option value="option1"></option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    </div>
+    <button class="search-btn">Search</button>
+  </div>
+      </form>
+    </div>
+
+    <!-- form for tablet screen -->
+    <div class="form-container-tablet">
+      <form class="tablet-form">
+        <h1 class="form-title">FIND YOUR EASY FLIGHT</h1>
+        <label for="select1">From</label>
+  <select id="select1" name="select1">
+    <option value="" disabled selected hidden>Choose City</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <label for="select1">To</label>
+  <select id="select1" name="select1">
+    <option class="choose-city" value="" disabled selected hidden>Choose City</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  <label for="date">Departure </label>
+  <input style="margin-bottom: 14px;" type="date" id="date" name="date">
+  <!-- button  to scroll down-->
+  <button id="scrollButton"><i style="color: hsl(45deg 87% 73%);" class="fa fa-arrow-down"></i></button>
+  <label for="date">Return </label>
+  <input type="date" id="date" name="date">
+
+  <div class="btn-passenger">
+    <div class="passenger">
+      <label for="select1">Passenger</label>
+    <select id="select1" name="select1">
+      <option value="option1"></option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+    </div>
+    <button class="search-btn">Search</button>
+  </div>
+      </form>
+    </div>
+
+    <div class="slider">
+      <div class="slider-item active">
+        <img src="./swimming-pool.jpg" alt="Slider Image 1">
+      </div>
+      <div class="slider-item">
+        <img src="./swimming-pool.jpg" alt="Slider Image 2">
+      </div>
+      <div class="slider-item">
+        <img src="./swimming-pool.jpg" alt="Slider Image 3">
+      </div>
+      <div class="slider-item">
+        <img src="./swimming-pool.jpg" alt="Slider Image 4">
+      </div>
+      <div class="slider-item">
+        <img src="./swimming-pool.jpg" alt="Slider Image 5">
+      </div>
+    </div>
+    
+  <!-- Navbar -->
+<div class="container">
+<nav class="navbar">
+  <a class="logo" href="#">COMPANYLOGO</a>
+  
+  <div class="leftNav">
+    <button type="button" class="links btn btn-link px-3 me-2">
+      Home
+    </button>
+    <button type="button" class="links btn btn-link px-3 me-2">
+      Destinations 
+    </button>
+    <button type="button" class="links btn btn-link px-3 me-2">
+      promotions 
+    </button>
+    <button type="button" class="links btn btn-link px-3 me-2">
+      Contact Us 
+    </button>
+    <a class="signup btn px-3"href="#" role="button">Sign Up</a>
+  </div>
+</nav>
+
+<!-- nav bar for mobile -->
+  <div class="navbar mobile">
+    <div class="toggle-button" onclick="toggleNav()"><i class="fa-solid menu fa-bars"></i></div>
+    <ul class="navbar-list">
+      <div class="close-button " onclick="toggleNav()"><i style=" color: black; left: 75px; top: 66px; position: fixed;" class="fa-solid menu fa-bars"></i></div>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">promotions</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Contact Us</a></li>
+
+    </ul>
+    <a class="logo" href="#">COMPANYLOGO</a>
+    <div class="button" style="cursor: pointer;"><i class="fa-regular fa-user"></i></div>
+  </div>
+  
+      <div class="section2">
+        <div class="slider-bullets">
+          <button class="slider-bullet active" data-slide="1"></button>
+          <button class="slider-bullet" data-slide="2"></button>
+          <button class="slider-bullet" data-slide="3"></button>
+          <button class="slider-bullet" data-slide="4"></button>
+          <button class="slider-bullet" data-slide="5"></button>
+        </div>
+  
+        <div class="section-content">
+          <h1 class="content-h1">Top 10 RESORTS</h1>
+          <p class="content-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatibus temporibus provident deleniti a dolorem nulla fugit!</p>
+          <button type="button" class="btn-learnMore">Learn More</button>
+        </div>
+      </div>
+</div>
+<!-- Navbar -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
