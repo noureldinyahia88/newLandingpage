@@ -66,6 +66,14 @@ const scrollButton = document.getElementById("scrollButton");
 scrollButton.addEventListener("click", function(e) {
   e.preventDefault()
   // window.scrollBy(0, 100);
-  formContainer.style.bottom = 0;
-  scrollButton.classList.add("hideButton");
+  // formContainer.style.bottom = 0;
+  // scrollButton.classList.add("hideButton");
 });
+
+
+// const date = document.getElementById('date')
+
+// date.ejDatePicker(){
+//       height: '500px', // sets height as 50 pixel
+//         width: '30px'
+// }

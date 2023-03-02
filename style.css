@@ -67,11 +67,14 @@ body{
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  /* transition: opacity 1s ease-in-out; */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: scale(1);
 }
 
 .slider-item.active {
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .slider-item img {
@@ -265,8 +268,8 @@ label{
   background-color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 9;
-  animation: slide-up 5s forwards;
+  z-index: 1;
+  animation: slide-up 2s forwards;
 }
 
 /* for button scroll down */
@@ -351,7 +354,7 @@ label{
   .navbar.mobile  .navbar-list {
     position: absolute;
     width: 150%;
-    height: 50vh;
+    height: 104vh;
     box-shadow: 0 0 10px #85888C;
     margin: -50px 0 0 -50px;
     padding: 50px;
@@ -360,7 +363,7 @@ label{
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0s cubic-bezier(0.77,0.2,0.05,1.0);
     z-index: 9999;
   }
   .close-button{
@@ -372,6 +375,7 @@ label{
 
   .navbar-list li  a{
     color: black;
+    font-size: 25px;
   }
   
   .navbar-list a {
@@ -379,10 +383,6 @@ label{
     display: block;
     padding: 20px;
     text-decoration: none;
-  }
-  
-  .navbar-list a:hover {
-    background-color: #444;
   }
   
   .show-nav {
